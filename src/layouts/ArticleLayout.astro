@@ -11,7 +11,7 @@ interface Props {
   eyebrow: string; // libellé de catégorie
   backHref: string;
   backLabel: string;
-  cover?: ImageMetadata;
+  cover?: ImageMetadata | string; // ImageMetadata (local) ou URL externe (string)
   coverAlt?: string;
   tags?: string[];
   meta?: string[]; // infos additionnelles (ex : nationalité, époque, difficulté)
@@ -37,7 +37,11 @@ const { title, description, date, eyebrow, backHref, backLabel, cover, coverAlt,
     {
       cover && (
         <figure class="article__cover">
-          <Image src={cover} alt={coverAlt ?? title} width={1280} height={720} />
+          {typeof cover === 'string' ? (
+            <img src={cover} alt={coverAlt ?? title} width="1280" height="720" loading="lazy" />
+          ) : (
+            <Image src={cover} alt={coverAlt ?? title} width={1280} height={720} />
+          )}
         </figure>
       )
     }

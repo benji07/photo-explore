@@ -13,9 +13,11 @@ const baseFields = ({ image }: { image: () => ReturnType<typeof z.object> | any 
   // Mettre à true pour masquer un article en production.
   draft: z.boolean().default(false),
   tags: z.array(z.string()).default([]),
-  // Image de couverture optionnelle : chemin relatif au fichier .md.
-  // Optionnelle -> une image manquante ne casse jamais le build (repli automatique).
-  cover: image().optional(),
+  // Image de couverture optionnelle. Deux formes acceptées :
+  //  - un chemin relatif vers un fichier local (helper image() -> optimisé) ;
+  //  - une URL externe (string) servie telle quelle via <img>, sans fetch au build.
+  // Optionnelle -> une couverture manquante ne casse jamais le build (repli automatique).
+  cover: z.union([image(), z.string().url()]).optional(),
   coverAlt: z.string().optional(),
 });
 
