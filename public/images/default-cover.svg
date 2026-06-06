@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Photo·Explore">
+  <rect width="600" height="400" fill="#f1e9e1" />
+  <circle cx="300" cy="200" r="78" fill="none" stroke="#8a5a3b" stroke-width="6" opacity="0.55" />
+  <circle cx="300" cy="200" r="26" fill="#8a5a3b" opacity="0.55" />
+  <g stroke="#8a5a3b" stroke-width="6" stroke-linecap="round" opacity="0.4">
+    <line x1="300" y1="98" x2="300" y2="128" />
+    <line x1="300" y1="272" x2="300" y2="302" />
+    <line x1="198" y1="200" x2="228" y2="200" />
+    <line x1="372" y1="200" x2="402" y2="200" />
+  </g>
+  <text x="300" y="356" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#8a5a3b" opacity="0.7">Photo·Explore</text>
+</svg>

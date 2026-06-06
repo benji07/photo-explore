@@ -1,0 +1,11 @@
+---
+import { withBase } from '../utils/links';
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <span>© {year} Photo·Explore — carnet de culture photographique.</span>
+    <a href={withBase('rss.xml')}>Flux RSS</a>
+  </div>
+</footer>

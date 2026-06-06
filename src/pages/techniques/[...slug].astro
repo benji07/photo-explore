@@ -1,0 +1,42 @@
+---
+import { render } from 'astro:content';
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+import { categoryByCollection } from '../../utils/categories';
+import { getPublished } from '../../utils/content';
+import { withBase } from '../../utils/links';
+
+export async function getStaticPaths() {
+  const entries = await getPublished('techniques');
+  return entries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const cat = categoryByCollection('techniques')!;
+const d = entry.data;
+
+const difficultyLabel: Record<string, string> = {
+  debutant: 'Niveau débutant',
+  intermediaire: 'Niveau intermédiaire',
+  avance: 'Niveau avancé',
+};
+const meta = [difficultyLabel[d.difficulty], d.gear.join(', ')].filter(Boolean);
+---
+
+<ArticleLayout
+  title={d.title}
+  description={d.description}
+  date={d.date}
+  eyebrow={cat.singular}
+  backHref={withBase(`${cat.slug}/`)}
+  backLabel={cat.label}
+  cover={d.cover}
+  coverAlt={d.coverAlt}
+  tags={d.tags}
+  meta={meta}
+>
+  <Content />
+</ArticleLayout>
