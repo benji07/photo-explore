@@ -1,0 +1,40 @@
+---
+import { Image } from 'astro:assets';
+import { withBase } from '../utils/links';
+import { formatDate } from '../utils/date';
+
+interface Props {
+  href: string;
+  title: string;
+  description: string;
+  date: Date;
+  cover?: ImageMetadata;
+  coverAlt?: string;
+  meta?: string; // ligne de méta optionnelle (ex : nationalité · époque)
+}
+
+const { href, title, description, date, cover, coverAlt, meta } = Astro.props;
+const fallback = withBase('images/default-cover.svg');
+---
+
+<article class="card">
+  <a href={href}>
+    <div class="card__media">
+      {
+        cover ? (
+          <Image src={cover} alt={coverAlt ?? title} width={520} height={347} />
+        ) : (
+          <img src={fallback} alt="" width="520" height="347" loading="lazy" />
+        )
+      }
+    </div>
+    <div class="card__body">
+      <h3 class="card__title">{title}</h3>
+      <p class="card__desc">{description}</p>
+      <p class="card__meta">
+        {meta ? `${meta} · ` : ''}
+        <time datetime={date.toISOString()}>{formatDate(date)}</time>
+      </p>
+    </div>
+  </a>
+</article>

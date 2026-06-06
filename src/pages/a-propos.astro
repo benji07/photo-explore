@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="À propos"
+  description="Pourquoi ce carnet : explorer la culture photographique, des photographes aux techniques de labo."
+>
+  <article class="article">
+    <header class="article__header">
+      <span class="eyebrow">À propos</span>
+      <h1>Un carnet pour cultiver le regard</h1>
+    </header>
+
+    <div class="prose">
+      <p>
+        <strong>Photo·Explore</strong> est un carnet personnel dédié à la culture photographique.
+        Il rassemble des portraits de photographes — célèbres ou méconnus —, des fiches techniques
+        de la prise de vue au tirage, et des articles plus généraux sur l'histoire et les courants
+        de la photographie.
+      </p>
+
+      <h2>La démarche</h2>
+      <p>
+        Je pratique la photographie argentique depuis longtemps. Côté technique, je suis à l'aise :
+        je fais du tirage couleur, et j'ai pratiqué le développement noir et blanc comme couleur.
+        Ce qui me manque, c'est la <em>culture</em> : connaître les photographes qui ont compté,
+        comprendre les mouvements, combler mes angles morts dans des domaines variés.
+      </p>
+      <p>
+        Ce carnet est l'outil de cet apprentissage. Chaque article explore un sujet, pour construire
+        peu à peu un regard plus informé — et donner envie d'aller voir les images par soi-même.
+      </p>
+
+      <h2>Les rubriques</h2>
+      <ul>
+        <li><strong>Photographes</strong> — portraits, parcours et œuvres marquantes.</li>
+        <li><strong>Techniques</strong> — prise de vue, argentique, labo, procédés alternatifs.</li>
+        <li><strong>Culture</strong> — histoire, courants, lectures et regards.</li>
+      </ul>
+
+      <h2>Comment c'est fait</h2>
+      <p>
+        Le site est statique, généré avec Astro et publié sur GitHub Pages. Les articles sont
+        rédigés en continu, et de nouvelles entrées s'ajoutent régulièrement au fil des explorations.
+      </p>
+    </div>
+  </article>
+</BaseLayout>

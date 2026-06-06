@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { categories } from '../utils/categories';
+import { getPublished } from '../utils/content';
+import { withBase } from '../utils/links';
+
+// Pour chaque catégorie, on récupère les articles publiés les plus récents.
+const sections = await Promise.all(
+  categories.map(async (cat) => ({
+    cat,
+    entries: (await getPublished(cat.collection)).slice(0, 3),
+  }))
+);
+---
+
+<BaseLayout title="Photo·Explore">
+  <section class="hero">
+    <h1>Explorer la photographie, un article à la fois</h1>
+    <p>
+      Un carnet pour découvrir des photographes — célèbres ou oubliés —, approfondir les techniques
+      de la prise de vue au tirage, et cultiver son regard.
+    </p>
+  </section>
+
+  {
+    sections.map(({ cat, entries }) => (
+      <section class="section">
+        <div class="section__head">
+          <h2>{cat.label}</h2>
+          <a href={withBase(`${cat.slug}/`)}>Tout voir →</a>
+        </div>
+        {entries.length === 0 ? (
+          <p class="empty">Bientôt des articles dans cette rubrique.</p>
+        ) : (
+          <div class="card-grid">
+            {entries.map((entry) => (
+              <ArticleCard
+                href={withBase(`${cat.slug}/${entry.id}/`)}
+                title={entry.data.title}
+                description={entry.data.description}
+                date={entry.data.date}
+                cover={entry.data.cover}
+                coverAlt={entry.data.coverAlt}
+              />
+            ))}
+          </div>
+        )}
+      </section>
+    ))
+  }
+</BaseLayout>
