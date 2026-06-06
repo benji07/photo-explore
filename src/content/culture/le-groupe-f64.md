@@ -4,6 +4,8 @@ description: "1932, San Francisco : Adams, Weston et leurs amis opposent la nett
 date: 2026-06-06
 draft: false
 tags: ["histoire", "grand format", "straight photography", "états-unis"]
+cover: "https://commons.wikimedia.org/wiki/Special:FilePath/Adams_The_Tetons_and_the_Snake_River.jpg"
+coverAlt: "« The Tetons and the Snake River » d'Ansel Adams : montagnes et rivière sinueuse en noir et blanc."
 ---
 
 À l'automne 1932, une poignée de photographes californiens se réunit autour
@@ -65,3 +67,5 @@ photographie est un art **par** ses moyens propres, et non malgré eux.
   chambre noire, elle en déplace seulement le lieu.
 - Suivre le fil jusqu'à la photographie documentaire et au paysage contemporain,
   héritiers lointains de cette exigence de clarté.
+
+*Image : Ansel Adams, « The Tetons and the Snake River » (1942), National Archives (NARA, 79-AAG-1) — domaine public.*
