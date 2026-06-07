@@ -28,6 +28,15 @@ plusieurs **schémas `.svg`** placés dans `public/images/schemas/` (voir
 | Technique | `src/content/techniques/` |
 | Culture | `src/content/culture/` |
 
+La rubrique **technique** ne se limite pas au labo : elle couvre le « **comment
+faire** » et le « **comment regarder** » — prise de vue et procédés argentiques
+(développement, tirage couleur/N&B, procédés alternatifs), mais aussi composition,
+cadrage, lumière et les grands genres photographiques (rue, portrait, paysage,
+nature morte, documentaire…). La rubrique **culture** traite, elle, du « **comment
+ça s'inscrit dans l'histoire** » : mouvements, courants, institutions, contexte.
+Un même genre (la photographie de rue, p. ex.) peut donc relever de *technique* s'il
+est abordé sous l'angle de la pratique, ou de *culture* sous l'angle historique.
+
 ## Nommage du fichier
 
 - **kebab-case, ASCII, sans accents ni espaces** : le nom du fichier devient le
