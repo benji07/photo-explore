@@ -88,8 +88,11 @@ argentique expérimenté qui veut combler ses lacunes de culture).
      ## 📷 Photographe (lundi), ## 🎞️ Culture (mercredi), ## 🔧 Technique (vendredi).
      Dans chaque section, 4 à 5 candidats en cases à cocher
      « - [ ] **Sujet** — pitch d'une ligne ». Varie connus et méconnus. Pour les
-     techniques : argentique, labo (développement, tirage couleur/N&B), procédés
-     alternatifs, au-delà des bases.
+     techniques, élargis au-delà du seul labo : prise de vue et procédés
+     argentiques (développement, tirage couleur/N&B, procédés alternatifs), mais
+     AUSSI composition, cadrage, lumière et les grands genres photographiques (rue,
+     portrait, paysage, nature morte, documentaire…). Toujours pour un lecteur
+     expérimenté, au-delà des bases.
 Ta seule sortie aujourd'hui est cette issue : n'écris aucun article et ne modifie
 aucun fichier du dépôt.
 ```
@@ -189,8 +192,11 @@ src/content/techniques/), en français.
    - une case cochée « - [x] » fait foi (si plusieurs, prends la première) ;
    - sinon, un commentaire nommant explicitement un sujet de cette section ;
    - sinon (aucune sélection), choisis toi-même le candidat le plus pertinent
-     parmi ceux listés dans cette section. Privilégie l'argentique, le labo
-     (développement, tirage couleur/N&B), les procédés alternatifs, au-delà des bases.
+     parmi ceux listés dans cette section. La rubrique technique va au-delà du seul
+     labo : prise de vue et procédés argentiques (développement, tirage couleur/N&B,
+     procédés alternatifs), mais aussi composition, cadrage, lumière et les grands
+     genres photographiques (rue, portrait, paysage, nature morte, documentaire…),
+     toujours au-delà des bases.
 3. Vérifie que le sujet n'est pas déjà traité dans src/content/techniques/.
 4. Si tu as accès au web, vérifie les faits clés (procédés, formules, chiffres) et
    réunis des sources fiables (publications techniques, institutionnelles).
@@ -222,8 +228,10 @@ liste ne sert qu'à démarrer ou à dépanner.
 
 - **Photographes** : Vivian Maier, Saul Leiter, Daido Moriyama, Fan Ho,
   Gordon Parks, Sabine Weiss, Guy Bourdin, Stephen Shore, Luigi Ghirri…
-- **Techniques** : tirage couleur RA-4, virage sépia/sélénium, sténopé,
-  cyanotype, contretypes, lecture d'un négatif, développement par inspection…
+- **Techniques** : tirage couleur RA-4, virage sépia/sélénium, sténopé, cyanotype,
+  contretypes, lecture d'un négatif — mais aussi composition (lignes de force,
+  hors-champ), travail de la lumière, et les grands genres (photographie de rue,
+  portrait, paysage, nature morte, documentaire)…
 - **Culture** : la New Color Photography, l'école de Düsseldorf, le
   photojournalisme, la photographie humaniste française, le mouvement
   pictorialiste, l'histoire du Leica…
