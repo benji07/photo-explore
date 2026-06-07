@@ -58,6 +58,21 @@ Résiné, séchage rapide, manipulation simple...
 Rendu plus profond, conservation supérieure, mais traitement plus exigeant...
 ```
 
+### Ajouter un schéma à une technique
+
+Les schémas se gèrent en **fichiers `.svg` autonomes** dans `public/images/schemas/`
+(pas de SVG collé dans le `.md`). On les référence par une image Markdown :
+
+```markdown
+![Trajet de la lumière dans l'agrandisseur](/photo-explore/images/schemas/ra4-trajet-lumiere.svg)
+
+*Légende courte en italique.*
+```
+
+Garde le SVG lisible hors du site : `viewBox`, fond explicite, couleurs en hex,
+`font-family` avec repli `sans-serif`, `<title>`/`<desc>`. Détails dans `CLAUDE.md`
+→ Images → « Schémas et illustrations ».
+
 ## Exemple — Culture
 
 Fichier : `src/content/culture/le-groupe-f64.md`
