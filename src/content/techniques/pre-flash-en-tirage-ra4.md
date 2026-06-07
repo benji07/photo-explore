@@ -193,16 +193,18 @@ contraste plus profonde et plus contrôlable, deux autres voies existent :
   en matériel et en rigueur ; Ctein lui consacre une large part de *Post Exposure*.
 - **Le blanchiment de l'image latente (méthode Sterry / SLIMT).** On baigne le
   papier **exposé mais non développé** dans une solution très diluée de **ferricyanure
-  de potassium** *avant* le révélateur : ce blanchiment attaque préférentiellement les
-  faibles densités et **réduit le contraste**. Pour le RA-4, l'article de référence
-  (Bertram W. Miller, « Lowering Contrast in RA-4 Color Papers », 1992) décrit un bain
-  de **0,1 % de ferricyanure de potassium** additionné de **0,03 % de bromure de
-  potassium** (anti-voile), de l'ordre de **9 min à 24 °C**, à usage unique, au prix
-  d'environ **⅔ de diaphragme de sensibilité**. Deux impératifs : **rincer
-  soigneusement** le papier avant le révélateur, et **ne jamais** mélanger le
-  ferricyanure au révélateur ni passer du révélateur directement au ferricyanure (la
-  réaction provoque taches et noircissement). À ne pas confondre avec le SLIMT
-  *moderne* de David Kachel, beaucoup plus dilué (0,01–0,03 %), calibré pour le N&B.
+  de potassium** *avant* le révélateur. Ce « blanchiment contrastant » détruit une part
+  de l'image latente **là où l'exposition a été la plus forte** — sur un tirage, ce
+  sont les **noirs**. Il abaisse donc le contraste en **rognant les ombres** : c'est
+  exactement le geste **complémentaire** du pre-flash, qui, lui, relève les hautes
+  lumières. Pour le RA-4, David Kachel — qui a mis au point la méthode moderne —
+  recommande le **ferricyanure seul, sans bromure de potassium** (sur papier couleur,
+  le bromure fait virer le révélateur), en dilution **de l'ordre de 0,01 %**, ~5 min
+  pour commencer, puis passage **direct au révélateur, sans rinçage** (la solution est
+  si diluée qu'elle ne contamine pas le bain), suivi d'un **développement RA-4 normal**.
+  Comptez une perte d'au moins **un diaphragme** de sensibilité et un risque de
+  **crossover** aux réductions extrêmes. La technique descend du procédé Sterry (1904,
+  au bichromate) et fut adaptée au RA-4 dès 1992 (Bertram W. Miller).
 - **Adoucir le révélateur.** Ajouter un peu de **sulfite de sodium** (~0,5 à 1 g/L),
   voire d'**acide citrazinique** (~0,5 g/L), au révélateur couleur fait baisser
   contraste, saturation et Dmax. Un ancien ingénieur papier de Kodak qualifiait
@@ -210,13 +212,19 @@ contraste plus profonde et plus contrôlable, deux autres voies existent :
 
 | Méthode | Agit surtout sur | Complexité |
 | --- | --- | --- |
-| Pré-flash | hautes lumières | faible (sous l'agrandisseur) |
-| SLIMT / Sterry | bas contraste global | moyenne (un bain en plus) |
+| Pré-flash | hautes lumières (relève le pied) | faible (sous l'agrandisseur) |
+| SLIMT / Sterry | ombres / noirs (rogne le haut) | moyenne (un bain en plus) |
 | Masque de contraste | plage entière | élevée (mise en registre) |
 
+Pré-flash et SLIMT attaquent donc le contraste **par les deux bouts opposés** de
+l'échelle : on peut même les combiner. Et pour qui voudrait au contraire *augmenter*
+le contraste d'un tirage couleur, la méthode de Robert Anderson (blanchiment au
+ferricyanure puis **redéveloppement**, répétable) en fournit le pendant — de quoi
+reconstituer, à eux deux, une forme de « contraste variable » pour la couleur.
+
 Pour la plupart des situations courantes — un ciel à sauver, des blancs à retenir —
-le pré-flash reste la solution la plus rapide et la moins risquée, à condition de
-respecter ce seuil de teinte que la bande d'essai vous révèle.
+le pré-flash reste néanmoins la solution la plus rapide et la moins risquée, à
+condition de respecter ce seuil de teinte que la bande d'essai vous révèle.
 
 ## Sources
 
@@ -234,9 +242,12 @@ respecter ce seuil de teinte que la bande d'essai vous révèle.
   — méthode Sterry chiffrée pour le RA-4 (références relayées sur Photrio).
 - *Printing from slide film using RA-4 reversal processing*, EMULSIVE (emulsive.org)
   — pré-flash en tirage inversible et chute du Dmax.
-- *Latent image bleaching / the new Sterry method*, Ed Buffaloe (unblinkingeye.com)
-  et David Kachel, *Practical Applications for S.L.I.M.T.* (davidkachel.com,
-  freestylephoto.com) — réduction de contraste par ferricyanure dilué.
+- David Kachel, *Practical Applications for S.L.I.M.T.* (freestylephoto.com, 2019) et
+  Ed Buffaloe, « Latent Image Bleaching » (unblinkingeye.com) — source de la méthode :
+  le blanchiment contrastant agit sur les zones les plus exposées (les noirs d'un
+  tirage), dilutions, et consigne **sans bromure** pour les papiers couleur RA-4/EP-2.
+  La méthode d'augmentation de contraste (blanchiment + redéveloppement) y est
+  attribuée à Robert Anderson.
 - Ctein, *Post Exposure: Advanced Techniques for the Photographic Printer* — masquage
   de contraste pour le tirage couleur RA-4.
 - « RA-4 process », Wikipedia (en.wikipedia.org) — rappel du procédé chromogène
