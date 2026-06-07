@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 320" role="img" aria-labelledby="titre desc" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="titre">Effet du pré-flashage sur l'échelle tonale d'un tirage RA-4</title>
+  <desc id="desc">Deux dégradés du blanc au noir. Sans pré-flash, les hautes lumières atteignent le blanc papier pur, sans détail. Avec pré-flash, l'extrémité claire du dégradé reçoit une légère densité : les hautes lumières sont comprimées et retrouvent du détail, tandis que les ombres restent inchangées et que le contraste global baisse un peu.</desc>
+  <rect x="0" y="0" width="560" height="320" fill="#fbfaf8"/>
+
+  <defs>
+    <linearGradient id="sans" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#111111"/>
+    </linearGradient>
+    <linearGradient id="avec" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d8d3c9"/>
+      <stop offset="0.12" stop-color="#cbc6bc"/>
+      <stop offset="1" stop-color="#111111"/>
+    </linearGradient>
+  </defs>
+
+  <!-- en-tete -->
+  <text x="60" y="40" font-size="12" fill="#6b6862">hautes lumières</text>
+  <text x="500" y="40" text-anchor="end" font-size="12" fill="#6b6862">ombres</text>
+
+  <!-- barre sans pré-flash -->
+  <text x="60" y="74" font-size="13" fill="#1c1b1a" font-weight="bold">Sans pré-flash</text>
+  <rect x="60" y="84" width="440" height="56" rx="3" fill="url(#sans)" stroke="#cfcabf" stroke-width="1"/>
+  <text x="64" y="116" font-size="11" fill="#7a7a7a">blanc pur, sans détail</text>
+
+  <!-- barre avec pré-flash -->
+  <text x="60" y="188" font-size="13" fill="#1c1b1a" font-weight="bold">Avec pré-flash</text>
+  <rect x="60" y="198" width="440" height="56" rx="3" fill="url(#avec)" stroke="#cfcabf" stroke-width="1"/>
+
+  <!-- crochet compression hautes lumieres -->
+  <path d="M60 268 L60 276 L150 276 L150 268" fill="none" stroke="#9c3461" stroke-width="1.4"/>
+  <text x="105" y="292" text-anchor="middle" font-size="11" fill="#9c3461">comprimées : détail récupéré</text>
+
+  <!-- ombres inchangees -->
+  <path d="M410 268 L410 276 L500 276 L500 268" fill="none" stroke="#6b6862" stroke-width="1.4"/>
+  <text x="455" y="292" text-anchor="middle" font-size="11" fill="#6b6862">inchangées</text>
+
+  <!-- fleche entre les deux -->
+  <path d="M520 112 C544 130 544 208 520 226" fill="none" stroke="#2a4490" stroke-width="1.3" marker-end="url(#a2)"/>
+  <defs>
+    <marker id="a2" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
+      <path d="M0 0 L6 3 L0 6 Z" fill="#2a4490"/>
+    </marker>
+  </defs>
+</svg>
