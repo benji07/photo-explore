@@ -13,12 +13,28 @@ interface Props {
   backLabel: string;
   cover?: ImageMetadata | string; // ImageMetadata (local) ou URL externe (string)
   coverAlt?: string;
+  coverCredit?: string; // crédit affiché en petit sous la couverture
+  coverSource?: string; // lien vers la source : rend la couverture cliquable
   tags?: string[];
   meta?: string[]; // infos additionnelles (ex : nationalité, époque, difficulté)
+  editUrl: string; // lien « Signaler une erreur » vers l'éditeur GitHub
 }
 
-const { title, description, date, eyebrow, backHref, backLabel, cover, coverAlt, tags, meta } =
-  Astro.props;
+const {
+  title,
+  description,
+  date,
+  eyebrow,
+  backHref,
+  backLabel,
+  cover,
+  coverAlt,
+  coverCredit,
+  coverSource,
+  tags,
+  meta,
+  editUrl,
+} = Astro.props;
 ---
 
 <BaseLayout title={title} description={description}>
@@ -37,10 +53,31 @@ const { title, description, date, eyebrow, backHref, backLabel, cover, coverAlt,
     {
       cover && (
         <figure class="article__cover">
-          {typeof cover === 'string' ? (
-            <img src={cover} alt={coverAlt ?? title} width="1280" height="720" loading="lazy" />
-          ) : (
-            <Image src={cover} alt={coverAlt ?? title} width={1280} height={720} />
+          <div class="article__cover-frame">
+            {coverSource ? (
+              <a href={coverSource} target="_blank" rel="noopener noreferrer">
+                {typeof cover === 'string' ? (
+                  <img src={cover} alt={coverAlt ?? title} width="1280" height="720" loading="lazy" />
+                ) : (
+                  <Image src={cover} alt={coverAlt ?? title} width={1280} height={720} />
+                )}
+              </a>
+            ) : typeof cover === 'string' ? (
+              <img src={cover} alt={coverAlt ?? title} width="1280" height="720" loading="lazy" />
+            ) : (
+              <Image src={cover} alt={coverAlt ?? title} width={1280} height={720} />
+            )}
+          </div>
+          {coverCredit && (
+            <figcaption class="figure__credit">
+              {coverSource ? (
+                <a href={coverSource} target="_blank" rel="noopener noreferrer">
+                  {coverCredit}
+                </a>
+              ) : (
+                coverCredit
+              )}
+            </figcaption>
           )}
         </figure>
       )
@@ -59,5 +96,11 @@ const { title, description, date, eyebrow, backHref, backLabel, cover, coverAlt,
         </ul>
       )
     }
+
+    <footer class="article__report">
+      <a href={editUrl} target="_blank" rel="noopener noreferrer" class="report-link">
+        ✎ Une erreur ? Signaler ou proposer une correction sur GitHub
+      </a>
+    </footer>
   </article>
 </BaseLayout>

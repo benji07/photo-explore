@@ -97,6 +97,34 @@ Le nom renvoie à la plus petite ouverture du diaphragme...
 Ansel Adams, Edward Weston, Imogen Cunningham...
 ```
 
+## Images créditées
+
+Quand tu as l'auteur et le lien d'une image, affiche le crédit en petit sous
+l'image et rends-la cliquable vers sa source.
+
+**Couverture** — deux champs de frontmatter :
+
+```yaml
+cover: "https://exemple.org/photo.jpg"
+coverAlt: "Description de l'image"
+coverCredit: "Auteur — Source, licence"
+coverSource: "https://exemple.org/page-source"
+```
+
+**Illustration dans le corps** — une image liée dont le `title` porte le crédit :
+
+```markdown
+[![Texte alternatif](https://exemple.org/photo.jpg "Auteur — Source, licence")](https://exemple.org/page-source)
+```
+
+Le `title` s'affiche en légende ; le lien rend l'image cliquable vers la source.
+
+## Signaler une erreur
+
+Chaque article affiche automatiquement, en bas de page, un lien « Signaler une
+erreur » qui ouvre le fichier `.md` dans l'éditeur GitHub. Rien à ajouter dans
+l'article : le lien est généré à partir du dossier et du nom de fichier.
+
 ## Rappels utiles
 
 - `description` : ≤ 160 caractères, c'est le résumé affiché dans les listes et

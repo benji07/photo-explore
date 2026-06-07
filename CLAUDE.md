@@ -85,12 +85,37 @@ Aucun champ supplémentaire : seulement les champs communs.
   coverAlt: "Description de l'image"
   ```
   Conditions à respecter :
-  - **Crédite la source** par une ligne discrète en italique à la fin du corps de
-    l'article, par ex. : `*Image : Auteur — Source, licence.*`
   - N'utilise que des images dont la licence le permet (**domaine public, CC0/CC**,
     ou autorisation d'embarquer). Ne hot-linke pas d'œuvres sous copyright.
   - Une image distante peut **casser** si l'hôte la supprime ou bloque le
     hot-linking ; en cas de doute, préfère l'image locale.
+
+### Créditer la couverture
+
+Quand tu connais l'auteur et la source d'une couverture (locale ou distante),
+renseigne ces deux champs : le crédit s'affiche **en petit sous l'image**, et
+l'image (ainsi que le crédit) devient **cliquable vers la source**.
+
+```yaml
+coverCredit: "Auteur — Source, licence"
+coverSource: "https://exemple.org/page-de-la-source"
+```
+
+Préfère ces champs à l'ancienne ligne de crédit en italique en fin d'article :
+le crédit est ainsi rattaché directement à l'image.
+
+### Illustrations dans le corps (légende + lien)
+
+Pour une image **dans le texte** avec crédit visible et lien vers la source,
+écris une image liée dont le `title` (entre guillemets) porte le crédit :
+
+```markdown
+[![Texte alternatif](https://exemple.org/photo.jpg "Auteur — Source, licence")](https://exemple.org/page-source)
+```
+
+- Le `title` devient la **légende** affichée en petit sous l'image.
+- Le lien autour de l'image la rend **cliquable vers la source**.
+- Sans lien (`![alt](url "crédit")`), tu obtiens une légende sans image cliquable.
 
 ### Schémas et illustrations (surtout pour les techniques)
 

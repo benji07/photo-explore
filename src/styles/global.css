@@ -289,9 +289,34 @@ main {
 
 .article__cover {
   margin: 1.75rem 0;
+}
+
+/* Le cadre porte la bordure : la légende reste hors du cadre, sous l'image. */
+.article__cover-frame {
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--color-border);
+}
+
+/* Crédit affiché en petit sous une image (couverture ou illustration). */
+.figure__credit {
+  margin-top: 0.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--color-muted);
+  text-align: center;
+}
+
+.figure__credit a {
+  color: var(--color-muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.figure__credit a:hover {
+  color: var(--color-accent);
 }
 
 /* Corps de texte rendu depuis le markdown */
@@ -316,6 +341,19 @@ main {
 .prose img {
   border-radius: var(--radius);
   margin-inline: auto;
+}
+
+/* Illustration légendée du corps : voir src/utils/rehype-figure.mjs. */
+.prose figure {
+  margin: 1.75rem 0;
+}
+
+.prose figure a {
+  display: block;
+}
+
+.prose figure .figure__credit {
+  margin-top: 0.5rem;
 }
 
 .prose blockquote {
@@ -362,6 +400,22 @@ main {
   color: var(--color-accent);
   padding: 0.2rem 0.6rem;
   border-radius: 999px;
+}
+
+/* Bouton « Signaler une erreur » en bas d'article */
+.article__report {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.report-link {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.report-link:hover {
+  color: var(--color-accent);
 }
 
 /* État vide */
