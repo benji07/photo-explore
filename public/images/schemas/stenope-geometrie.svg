@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" role="img" aria-labelledby="titre desc" font-family="Helvetica, Arial, sans-serif">
+  <title id="titre">Géométrie de la formation d'image au sténopé</title>
+  <desc id="desc">Un objet à gauche émet des rayons qui se croisent en passant par un trou de diamètre d percé dans une paroi, et forment à droite, sur le plan du film situé à la distance f, une image inversée. Le diamètre optimal vaut environ 1,9 fois la racine carrée du produit de f par la longueur d'onde.</desc>
+
+  <rect x="0" y="0" width="760" height="440" fill="#fbfaf8"/>
+
+  <defs>
+    <marker id="fleche" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#2b2b2b"/>
+    </marker>
+    <marker id="tick" markerWidth="6" markerHeight="12" refX="3" refY="6" orient="auto">
+      <path d="M3,0 L3,12" stroke="#6b6b6b" stroke-width="1.2"/>
+    </marker>
+  </defs>
+
+  <!-- Rayons lumineux (se croisent au trou) -->
+  <line x1="90" y1="140" x2="620" y2="286" stroke="#c0492b" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <line x1="90" y1="300" x2="620" y2="154" stroke="#c0492b" stroke-width="1.5" stroke-dasharray="5 4"/>
+
+  <!-- Objet (flèche vers le haut) -->
+  <line x1="90" y1="300" x2="90" y2="140" stroke="#2b2b2b" stroke-width="3" marker-end="url(#fleche)"/>
+  <text x="90" y="322" text-anchor="middle" font-size="16" fill="#2b2b2b">Objet</text>
+
+  <!-- Paroi avec le trou (gap au centre) -->
+  <line x1="380" y1="80" x2="380" y2="212" stroke="#6b6b6b" stroke-width="4"/>
+  <line x1="380" y1="228" x2="380" y2="360" stroke="#6b6b6b" stroke-width="4"/>
+  <text x="380" y="70" text-anchor="middle" font-size="16" fill="#2b2b2b">Paroi (trou)</text>
+
+  <!-- Cote du diamètre d -->
+  <line x1="404" y1="212" x2="404" y2="228" stroke="#c0492b" stroke-width="1.2" marker-start="url(#tick)" marker-end="url(#tick)"/>
+  <text x="414" y="225" font-size="16" fill="#c0492b" font-style="italic">d</text>
+
+  <!-- Plan du film -->
+  <line x1="620" y1="120" x2="620" y2="320" stroke="#6b6b6b" stroke-width="3" stroke-dasharray="2 3"/>
+  <!-- Image inversée (flèche vers le bas) -->
+  <line x1="620" y1="154" x2="620" y2="286" stroke="#2b2b2b" stroke-width="3" marker-end="url(#fleche)"/>
+  <text x="620" y="338" text-anchor="middle" font-size="16" fill="#2b2b2b">Image inversée</text>
+
+  <!-- Cote de la distance focale f -->
+  <line x1="380" y1="392" x2="620" y2="392" stroke="#6b6b6b" stroke-width="1.2" marker-start="url(#tick)" marker-end="url(#tick)"/>
+  <text x="500" y="384" text-anchor="middle" font-size="15" fill="#6b6b6b" font-style="italic">f (distance trou–film)</text>
+
+  <!-- Formule -->
+  <text x="380" y="424" text-anchor="middle" font-size="16" fill="#2b2b2b">Diamètre optimal : d ≈ 1,9 √(f · λ)</text>
+</svg>
