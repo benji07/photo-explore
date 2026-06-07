@@ -3,7 +3,7 @@ import { render } from 'astro:content';
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
 import { categoryByCollection } from '../../utils/categories';
 import { getPublished } from '../../utils/content';
-import { withBase } from '../../utils/links';
+import { githubEditUrl, withBase } from '../../utils/links';
 
 export async function getStaticPaths() {
   const entries = await getPublished('photographers');
@@ -30,8 +30,11 @@ const meta = [d.nationality, d.era, d.genres.join(', ')].filter(Boolean);
   backLabel={cat.label}
   cover={d.cover}
   coverAlt={d.coverAlt}
+  coverCredit={d.coverCredit}
+  coverSource={d.coverSource}
   tags={d.tags}
   meta={meta}
+  editUrl={githubEditUrl('photographers', entry.id)}
 >
   <Content />
 </ArticleLayout>

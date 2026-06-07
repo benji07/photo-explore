@@ -8,3 +8,14 @@ export function withBase(path: string): string {
   const clean = path.replace(/^\/+/, ''); // retire les slashs de tête
   return clean ? `${base}/${clean}` : `${base}/`;
 }
+
+// Lien vers l'éditeur GitHub du fichier source d'un article. Ouvre l'éditeur
+// en ligne : un visiteur sans droits d'écriture est automatiquement invité à
+// forker le dépôt et à proposer une Pull Request — le chemin le plus court pour
+// soumettre une correction.
+const REPO = 'https://github.com/benji07/photo-explore';
+const DEFAULT_BRANCH = 'main';
+
+export function githubEditUrl(collection: string, id: string): string {
+  return `${REPO}/edit/${DEFAULT_BRANCH}/src/content/${collection}/${id}.md`;
+}

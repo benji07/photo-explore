@@ -10,6 +10,8 @@ genres: ["photographie de rue", "couleur", "portrait"]
 tags: ["couleur", "kodachrome", "new york", "argentique"]
 cover: "https://upload.wikimedia.org/wikipedia/commons/a/aa/Saul_leiter_by_pierre_belhassen.jpg"
 coverAlt: "Portrait de Saul Leiter."
+coverCredit: "Pierre Belhassen — Travail personnel, CC BY-SA 4.0"
+coverSource: "https://commons.wikimedia.org/w/index.php?curid=53147103"
 ---
 
 Pendant un demi-siècle, Saul Leiter a photographié les quelques rues qui
@@ -64,5 +66,3 @@ d'archives. Il meurt la même année, devenu une référence majeure de la coule
   une limite.
 - **L'anti-spectacle.** Contre la photographie qui crie, Leiter propose le murmure :
   le partiel, le voilé, le retenu. Une invitation à composer plutôt qu'à attraper.
-
-*Image : Par Pierre Belhassen — Travail personnel, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=53147103*

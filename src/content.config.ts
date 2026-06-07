@@ -19,6 +19,10 @@ const baseFields = ({ image }: { image: () => ReturnType<typeof z.object> | any 
   // Optionnelle -> une couverture manquante ne casse jamais le build (repli automatique).
   cover: z.union([image(), z.string().url()]).optional(),
   coverAlt: z.string().optional(),
+  // Crédit de la couverture, affiché en petit sous l'image (ex : "Auteur — Source, licence").
+  coverCredit: z.string().optional(),
+  // Lien vers la source : rend la couverture (et son crédit) cliquable.
+  coverSource: z.string().url().optional(),
 });
 
 const photographers = defineCollection({
