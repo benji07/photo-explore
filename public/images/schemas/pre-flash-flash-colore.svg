@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" role="img" aria-labelledby="titre desc" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="titre">Pourquoi un pré-flash coloré teinte surtout les hautes lumières</title>
+  <desc id="desc">Pour chaque zone tonale, on compare la lumière reçue de l'image et la quantité fixe de pré-flash coloré. Les hautes lumières reçoivent peu de lumière d'image : le pré-flash y représente une grande proportion et les teinte nettement. Les ombres reçoivent beaucoup de lumière d'image : le pré-flash y devient négligeable et ne les colore presque pas.</desc>
+  <rect x="0" y="0" width="560" height="360" fill="#fbfaf8"/>
+
+  <text x="30" y="36" font-size="13" fill="#1c1b1a" font-weight="bold">Part du pré-flash dans la lumière totale reçue</text>
+
+  <!-- Hautes lumieres -->
+  <text x="30" y="103" font-size="12" fill="#6b6862">Hautes lumières</text>
+  <rect x="180" y="88" width="50" height="30" fill="#9a958c"/>
+  <rect x="230" y="88" width="60" height="30" fill="#e0a062"/>
+  <text x="300" y="108" font-size="12" fill="#8a5a3b" font-weight="bold">≈ 55 %</text>
+
+  <!-- Mediums -->
+  <text x="30" y="173" font-size="12" fill="#6b6862">Médiums</text>
+  <rect x="180" y="158" width="150" height="30" fill="#9a958c"/>
+  <rect x="330" y="158" width="60" height="30" fill="#e0a062"/>
+  <text x="400" y="178" font-size="12" fill="#8a5a3b">≈ 29 %</text>
+
+  <!-- Ombres -->
+  <text x="30" y="243" font-size="12" fill="#6b6862">Ombres</text>
+  <rect x="180" y="228" width="300" height="30" fill="#9a958c"/>
+  <rect x="480" y="228" width="60" height="30" fill="#e0a062"/>
+  <text x="486" y="276" font-size="12" fill="#8a5a3b">≈ 17 %</text>
+
+  <!-- legende -->
+  <rect x="180" y="300" width="20" height="14" fill="#9a958c"/>
+  <text x="206" y="312" font-size="11" fill="#1c1b1a">lumière de l'image</text>
+  <rect x="350" y="300" width="20" height="14" fill="#e0a062"/>
+  <text x="376" y="312" font-size="11" fill="#1c1b1a">pré-flash coloré (quantité fixe)</text>
+
+  <text x="30" y="342" font-size="11" fill="#8a5a3b" font-style="italic">À flash égal, la teinte pèse lourd dans les clairs et se dilue dans les ombres.</text>
+</svg>
