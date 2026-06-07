@@ -46,6 +46,10 @@ même temps.**
 - Trop **bleu** → baisser Y ; trop **vert** → baisser M ; trop **rouge** → baisser
   Y et M ensemble.
 
+![Table de correction RA-4 : pour chaque dominante perçue (jaune, magenta, cyan, bleu, vert, rouge), l'action sur les molettes Y et M.](/photo-explore/images/schemas/ra4-corrections-dominantes.svg)
+
+*Aide-mémoire : la dominante vue sur l'épreuve et la correction à appliquer.*
+
 ## Lire la dominante
 
 L'œil juge mal une couleur dans l'absolu. Photographiez une fois une **charte de
