@@ -8,7 +8,7 @@ interface Props {
   title: string;
   description: string;
   date: Date;
-  cover?: ImageMetadata;
+  cover?: ImageMetadata | string; // ImageMetadata (local) ou URL externe (string)
   coverAlt?: string;
   meta?: string; // ligne de méta optionnelle (ex : nationalité · époque)
 }
@@ -22,7 +22,11 @@ const fallback = withBase('images/default-cover.svg');
     <div class="card__media">
       {
         cover ? (
-          <Image src={cover} alt={coverAlt ?? title} width={520} height={347} />
+          typeof cover === 'string' ? (
+            <img src={cover} alt={coverAlt ?? title} width="520" height="347" loading="lazy" />
+          ) : (
+            <Image src={cover} alt={coverAlt ?? title} width={520} height={347} />
+          )
         ) : (
           <img src={fallback} alt="" width="520" height="347" loading="lazy" />
         )

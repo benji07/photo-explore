@@ -6,6 +6,8 @@ draft: false
 difficulty: avance
 gear: ["tête couleur ou tiroir à filtres", "chimie RA-4", "charte gris neutre", "thermomètre", "minuterie"]
 tags: ["argentique", "labo", "couleur", "tirage"]
+cover: "https://upload.wikimedia.org/wikipedia/commons/9/95/Photographic_darkroom%2C_probably_Geoff_Charles%27s_darkroom%2C_Bangor_%281532106%29.jpg"
+coverAlt: "Intérieur d'un labo photographique argentique."
 ---
 
 Tirer un négatif couleur sur papier RA-4 n'est pas plus difficile qu'un tirage
@@ -74,3 +76,5 @@ humide paraît plus froid et plus dense, ce qui fausse l'appréciation.
 - **La latitude est faible.** Contrairement au N&B, le papier couleur pardonne peu :
   c'est la régularité (chimie, mesure, notes) qui fait la couleur juste, plus que
   le coup d'œil.
+
+*Image : Geoff Charles, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Photographic_darkroom,_probably_Geoff_Charles%27s_darkroom,_Bangor_(1532106).jpg).*

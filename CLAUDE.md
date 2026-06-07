@@ -68,12 +68,25 @@ Aucun champ supplémentaire : seulement les champs communs.
 
 - **Par défaut, n'ajoute PAS de `cover`** : une couverture de repli s'affiche
   automatiquement. C'est l'option la plus sûre (jamais de build cassé).
-- Si tu ajoutes une image : place le fichier dans `src/assets/covers/`, puis :
+- **Image locale (recommandé)** — place le fichier dans `src/assets/covers/`, puis :
   ```yaml
   cover: ../../assets/covers/mon-image.jpg
   coverAlt: "Description de l'image"
   ```
-  Formats acceptés : `jpg`, `png`, `webp`, `avif`. **Jamais** d'URL externe.
+  Formats acceptés : `jpg`, `png`, `webp`, `avif`. Le fichier local est optimisé au
+  build et ne risque jamais de disparaître.
+- **URL externe (autorisé)** — tu peux pointer une image distante :
+  ```yaml
+  cover: "https://exemple.org/chemin/mon-image.jpg"
+  coverAlt: "Description de l'image"
+  ```
+  Conditions à respecter :
+  - **Crédite la source** par une ligne discrète en italique à la fin du corps de
+    l'article, par ex. : `*Image : Auteur — Source, licence.*`
+  - N'utilise que des images dont la licence le permet (**domaine public, CC0/CC**,
+    ou autorisation d'embarquer). Ne hot-linke pas d'œuvres sous copyright.
+  - Une image distante peut **casser** si l'hôte la supprime ou bloque le
+    hot-linking ; en cas de doute, préfère l'image locale.
 
 ## Corps de l'article
 
