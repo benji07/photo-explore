@@ -16,6 +16,10 @@ absolus », privilégie la culture, l'histoire, et la technique au-delà des bas
 commit.** Ne modifie pas la configuration, les layouts, les composants, le
 workflow, ni les autres articles — sauf demande explicite.
 
+Seule exception tolérée : un article **technique** peut s'accompagner d'un ou
+plusieurs **schémas `.svg`** placés dans `public/images/schemas/` (voir
+« Images » → « Schémas et illustrations »). Rien d'autre ne change.
+
 ## Où écrire
 
 | Type d'article | Dossier |
@@ -87,6 +91,30 @@ Aucun champ supplémentaire : seulement les champs communs.
     ou autorisation d'embarquer). Ne hot-linke pas d'œuvres sous copyright.
   - Une image distante peut **casser** si l'hôte la supprime ou bloque le
     hot-linking ; en cas de doute, préfère l'image locale.
+
+### Schémas et illustrations (surtout pour les techniques)
+
+Un article technique peut être éclairé par un **schéma** (trajet lumineux, logique
+de filtration, courbe sensitométrique, étapes d'un procédé…). On les gère comme des
+**fichiers `.svg` autonomes**, et **non** en SVG collé dans le `.md` :
+
+1. Crée le fichier dans **`public/images/schemas/`**, nom en **kebab-case ASCII**
+   (ex : `ra4-trajet-lumiere.svg`). Le fichier est servi tel quel : on peut
+   l'ouvrir directement, et son URL reste stable.
+2. Rends le SVG **auto-suffisant** (lisible hors du site) : `viewBox`, un fond
+   explicite (ex : `fill="#fbfaf8"`), des couleurs en **hex** (pas de `var(...)`
+   CSS), une `font-family` avec repli `sans-serif`, et un `<title>`/`<desc>` +
+   `role="img"` pour l'accessibilité.
+3. Référence-le dans l'article par une **image Markdown**, chemin absolu sous la
+   base du site, avec un texte alternatif descriptif :
+   ```markdown
+   ![Description du schéma](/photo-explore/images/schemas/mon-schema.svg)
+
+   *Légende courte en italique.*
+   ```
+
+Reste sobre : un ou deux schémas utiles valent mieux qu'une avalanche. Le `.svg`
+ne casse jamais le build (fichier statique), mais vérifie quand même le rendu.
 
 ## Corps de l'article
 

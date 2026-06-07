@@ -36,6 +36,10 @@ revient à poser un filtre gris neutre qui ne fait qu'allonger le temps de pose
 sans changer la balance. Règle d'or : **on ne touche jamais aux trois molettes en
 même temps.**
 
+![Trajet de la lumière dans l'agrandisseur couleur : lampe, molettes jaune (Y) et magenta (M) avec cyan (C) à zéro, négatif au masque orangé, objectif, puis papier RA-4.](/photo-explore/images/schemas/ra4-trajet-lumiere.svg)
+
+*Le faisceau traverse la filtration (Y + M, cyan à zéro) avant d'éclairer le négatif, puis le papier.*
+
 - Trop **jaune** sur l'épreuve → ajouter du jaune (monter Y).
 - Trop **magenta** → monter M.
 - Trop **cyan** → *baisser* Y **et** M (puisqu'on ne met pas de cyan).

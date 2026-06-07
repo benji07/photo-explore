@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 480" role="img" aria-labelledby="titre desc" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="titre">Trajet de la lumière dans l'agrandisseur couleur (RA-4)</title>
+  <desc id="desc">La lumière de la lampe traverse la tête couleur — molettes jaune (Y) et magenta (M), cyan (C) maintenu à zéro — puis le négatif au masque orangé, l'objectif, et atteint le papier RA-4.</desc>
+  <!-- fond -->
+  <rect x="0" y="0" width="520" height="480" fill="#fbfaf8"/>
+  <!-- faisceau lumineux -->
+  <path d="M205 70 H315 L300 250 H220 Z" fill="#f7eccb" opacity="0.7"/>
+  <path d="M220 296 L150 430 H370 L300 296 Z" fill="#f7eccb" opacity="0.55"/>
+  <!-- lampe -->
+  <rect x="205" y="24" width="110" height="42" rx="6" fill="#fffaf0" stroke="#8a5a3b" stroke-width="1.5"/>
+  <text x="260" y="50" text-anchor="middle" font-size="14" fill="#1c1b1a">Lampe</text>
+  <!-- tête couleur : 3 molettes -->
+  <rect x="170" y="86" width="180" height="92" rx="6" fill="#ffffff" stroke="#6b6862" stroke-width="1.5"/>
+  <text x="260" y="103" text-anchor="middle" font-size="11" fill="#6b6862">Tête couleur</text>
+  <rect x="183" y="112" width="48" height="52" rx="4" fill="#f2c84b" stroke="#caa436" stroke-width="1.2"/>
+  <text x="207" y="135" text-anchor="middle" font-size="13" fill="#1c1b1a" font-weight="bold">Y</text>
+  <text x="207" y="153" text-anchor="middle" font-size="11" fill="#1c1b1a">50</text>
+  <rect x="236" y="112" width="48" height="52" rx="4" fill="#c8487f" stroke="#9c3461" stroke-width="1.2"/>
+  <text x="260" y="135" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="bold">M</text>
+  <text x="260" y="153" text-anchor="middle" font-size="11" fill="#ffffff">50</text>
+  <rect x="289" y="112" width="48" height="52" rx="4" fill="#eef4f4" stroke="#b9cccc" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="313" y="135" text-anchor="middle" font-size="13" fill="#6b6862" font-weight="bold">C</text>
+  <text x="313" y="153" text-anchor="middle" font-size="11" fill="#6b6862">0</text>
+  <!-- négatif -->
+  <rect x="196" y="212" width="128" height="40" rx="4" fill="#d98a3d" stroke="#a8682a" stroke-width="1.5"/>
+  <text x="260" y="231" text-anchor="middle" font-size="12" fill="#ffffff">Négatif</text>
+  <text x="260" y="245" text-anchor="middle" font-size="10" fill="#fbeede">masque orangé</text>
+  <!-- objectif -->
+  <path d="M222 270 H298 L284 296 H236 Z" fill="#2b2a28" stroke="#1c1b1a" stroke-width="1.5"/>
+  <text x="360" y="287" text-anchor="start" font-size="11" fill="#6b6862">objectif</text>
+  <!-- papier -->
+  <rect x="120" y="430" width="280" height="34" rx="4" fill="#fffdf9" stroke="#8a5a3b" stroke-width="1.5"/>
+  <text x="260" y="452" text-anchor="middle" font-size="13" fill="#1c1b1a">Papier RA-4</text>
+  <!-- annotation -->
+  <text x="364" y="132" text-anchor="start" font-size="11" fill="#8a5a3b">on n'agit</text>
+  <text x="364" y="146" text-anchor="start" font-size="11" fill="#8a5a3b">que sur</text>
+  <text x="364" y="160" text-anchor="start" font-size="11" fill="#8a5a3b">Y et M</text>
+</svg>
