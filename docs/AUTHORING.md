@@ -102,6 +102,11 @@ Ansel Adams, Edward Weston, Imogen Cunningham...
 Quand tu as l'auteur et le lien d'une image, affiche le crédit en petit sous
 l'image et rends-la cliquable vers sa source.
 
+Côté format, privilégie une cover **paysage** (≈ 3:2 ou 16:9) ou **carrée** :
+une image **portrait** s'étire verticalement sur la page article et prend trop
+de place. Sans `cover`, un dégradé de repli coloré et propre à l'article
+s'affiche automatiquement.
+
 **Couverture** — deux champs de frontmatter :
 
 ```yaml

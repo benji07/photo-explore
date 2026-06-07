@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
-import { withBase } from '../utils/links';
 import { formatDate } from '../utils/date';
+import { placeholder } from '../utils/placeholder';
 
 interface Props {
   href: string;
@@ -14,7 +14,6 @@ interface Props {
 }
 
 const { href, title, description, date, cover, coverAlt, meta } = Astro.props;
-const fallback = withBase('images/default-cover.svg');
 ---
 
 <article class="card">
@@ -28,7 +27,7 @@ const fallback = withBase('images/default-cover.svg');
             <Image src={cover} alt={coverAlt ?? title} width={520} height={347} />
           )
         ) : (
-          <img src={fallback} alt="" width="520" height="347" loading="lazy" />
+          <div class="card__placeholder" style={`background:${placeholder(title)}`} aria-hidden="true" />
         )
       }
     </div>
