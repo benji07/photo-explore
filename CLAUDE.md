@@ -70,8 +70,13 @@ Aucun champ supplémentaire : seulement les champs communs.
 
 ## Images
 
-- **Par défaut, n'ajoute PAS de `cover`** : une couverture de repli s'affiche
-  automatiquement. C'est l'option la plus sûre (jamais de build cassé).
+- **Par défaut, n'ajoute PAS de `cover`** : un dégradé de repli coloré s'affiche
+  automatiquement (différent pour chaque article). C'est l'option la plus sûre
+  (jamais de build cassé).
+- **Format conseillé** : privilégie une cover **paysage** (≈ 3:2 ou 16:9) ou
+  **carrée**. Évite le **portrait** : sur la page article il s'étire
+  verticalement et prend trop de place (sa hauteur est désormais plafonnée, mais
+  le rendu reste plus équilibré en paysage ou carré).
 - **Image locale (recommandé)** — place le fichier dans `src/assets/covers/`, puis :
   ```yaml
   cover: ../../assets/covers/mon-image.jpg
