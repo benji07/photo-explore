@@ -148,6 +148,27 @@ ne casse jamais le build (fichier statique), mais vérifie quand même le rendu.
   **jamais** `#`.
 - Vise 400–900 mots, structurés, avec des intertitres.
 
+## Sourcer l'article
+
+**N'invente aucune information : tout fait doit être vérifié et sourcé.** Dates,
+lieux, titres d'œuvres, attributions, chiffres et formules s'appuient sur des
+sources fiables — privilégie les **sources primaires ou institutionnelles**
+(musées comme le MoMA, Library of Congress, fondations d'auteur, encyclopédies de
+référence, publications techniques) et ne retiens qu'une information **corroborée**.
+
+Termine chaque article par une section **`## Sources`** qui liste les références
+consultées (titre + éditeur/site, et le lien quand il existe). Exemple :
+
+```markdown
+## Sources
+
+- The Gordon Parks Foundation — « American Gothic » (gordonparksfoundation.org).
+- « Gordon Parks », Encyclopædia Britannica (britannica.com).
+```
+
+En cas de doute sur un fait, ne l'écris pas. Mieux vaut un article plus court mais
+entièrement sourcé qu'une affirmation invérifiable.
+
 ## Avant de commit
 
 Lance le build — c'est lui qui valide le schéma :

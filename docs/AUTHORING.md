@@ -125,6 +125,24 @@ Chaque article affiche automatiquement, en bas de page, un lien « Signaler une
 erreur » qui ouvre le fichier `.md` dans l'éditeur GitHub. Rien à ajouter dans
 l'article : le lien est généré à partir du dossier et du nom de fichier.
 
+## Sourcer l'article
+
+Règle de fond (voir `CLAUDE.md` → « Sourcer l'article ») : **aucune information
+inventée**, tout fait est vérifié et sourcé. Chaque article se termine par une
+section `## Sources` listant les références consultées.
+
+```markdown
+## Sources
+
+- MoMA — fiche d'exposition *Photographs by William Eggleston* (1976)
+  (moma.org/calendar/exhibitions/2079).
+- « William Eggleston », Wikipedia (en.wikipedia.org).
+```
+
+Préfère les sources primaires ou institutionnelles (musées, Library of Congress,
+fondations d'auteur, encyclopédies de référence, publications techniques) et ne
+garde qu'une information corroborée. En cas de doute, ne l'écris pas.
+
 ## Rappels utiles
 
 - `description` : ≤ 160 caractères, c'est le résumé affiché dans les listes et
