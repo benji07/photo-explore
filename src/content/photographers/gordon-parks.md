@@ -8,6 +8,10 @@ era: "1912–2006"
 nationality: "Américaine"
 genres: ["photojournalisme", "documentaire social", "mode", "portrait"]
 tags: ["photojournalisme", "fsa", "life", "états-unis", "noir et blanc"]
+cover: "https://commons.wikimedia.org/wiki/Special:FilePath/Gordon_Parks_-_American_Gothic.jpg"
+coverAlt: "« American Gothic, Washington, D.C. » : Ella Watson devant le drapeau américain, un balai et une serpillière à la main."
+coverCredit: "Gordon Parks, « American Gothic, Washington, D.C. » (1942) — FSA/OWI, Library of Congress, domaine public"
+coverSource: "https://commons.wikimedia.org/wiki/File:Gordon_Parks_-_American_Gothic.jpg"
 ---
 
 Gordon Parks aimait dire qu'il avait choisi l'appareil photo comme « arme »
