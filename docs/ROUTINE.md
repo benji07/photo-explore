@@ -31,12 +31,19 @@ Objectif du jour : ajouter UN nouvel article de qualité, en français.
 4. Rédige l'article : 400–900 mots, intertitres en ##, ton informé mais
    accessible, sans cover (laisse l'image de repli).
 5. Crée le fichier .md au bon endroit, nom en kebab-case sans accents.
-6. Lance `npm install` (si besoin) puis `npm run build`. Corrige le frontmatter
+6. Pour un article TECHNIQUE, si un schéma clarifie vraiment le propos (trajet
+   lumineux, logique de filtration, courbe, étapes d'un procédé), ajoute un
+   fichier .svg autonome dans public/images/schemas/ (kebab-case ASCII, fond et
+   couleurs en hex, font-family avec repli sans-serif, <title>/<desc>) et
+   référence-le par une image Markdown : ![alt](/photo-explore/images/schemas/
+   <nom>.svg). Reste sobre : un ou deux schémas utiles au maximum. Voir CLAUDE.md
+   → Images → « Schémas et illustrations ».
+7. Lance `npm install` (si besoin) puis `npm run build`. Corrige le frontmatter
    tant que le build échoue.
-7. Quand le build passe, commit avec un message clair (ex : "Ajoute un portrait
+8. Quand le build passe, commit avec un message clair (ex : "Ajoute un portrait
    de <nom>") et push sur main. N'ouvre pas de pull request.
 
-Ne modifie aucun autre fichier que le nouvel article.
+Ne modifie aucun autre fichier que le nouvel article et son ou ses schémas .svg.
 ```
 
 ## Idées de sujets (pour amorcer)
