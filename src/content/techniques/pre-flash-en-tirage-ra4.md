@@ -10,11 +10,14 @@ tags: ["argentique", "labo", "couleur", "tirage", "contraste"]
 
 En tirage noir et blanc, quand un négatif est trop contrasté, on baisse le grade :
 le papier multigrade offre un réglage continu de la dureté. **Le papier couleur
-RA-4 n'a pas cet équivalent.** Sa courbe est fixe et naturellement raide, calée
-pour restituer fidèlement un négatif couleur correctement exposé. Dès que la scène
-dépasse cette plage — un ciel d'été sur un paysage à l'ombre, une robe blanche au
-soleil — les hautes lumières « brûlent » en blanc papier sans matière, et aucune
-molette de filtration ne les rattrape.
+RA-4 n'a pas cet équivalent.** Sa courbe est fixe et naturellement raide — un gamma
+de l'ordre de 2 à 2,5 dans la zone médiane, là où un papier N&B « normal » tourne
+plutôt autour de 1,7. Surtout, le papier couleur n'a jamais existé en grades
+*doux* : la gamme historique (chez Kodak, les Endura Portra, Supra puis Ultra)
+n'offrait que le grade « normal » et des grades plus durs, **jamais plus tendres**.
+Dès que la scène dépasse cette plage — un ciel d'été sur un paysage à l'ombre, une
+robe blanche au soleil — les hautes lumières « brûlent » en blanc papier sans
+matière, et aucune molette de filtration ne les rattrape.
 
 Le **pré-flashage** (*pre-flash*) est l'un des rares leviers de réduction de
 contraste qui restent accessibles sous l'agrandisseur, sans chimie spéciale ni
@@ -96,16 +99,31 @@ qui ne gêne que dans les hautes lumières, sans déséquilibrer l'ensemble du t
 ce qu'une correction de filtration globale, elle, ne saurait faire de façon aussi
 localisée tonalement.
 
+Concrètement, teinter le flash, c'est **s'écarter de la filtration neutre** (celle
+du film vierge masqué) : l'écart se reporte surtout sur les clairs. C'est aussi la
+limite de l'exercice — un écart marqué peut provoquer un **crossover** (une
+dominante qui s'inverse entre clairs et ombres), difficile à rattraper. Bien dosé,
+l'effet ouvre en revanche la porte à une forme de **split-toning couleur** : une
+teinte dans les hautes lumières, des ombres laissées tranquilles.
+
 ## Mise en pratique : doser le pre-flash
 
 ### Monter le banc
 
-L'agrandisseur lui-même sert de source. **Retirez le négatif**, montez la tête
-**aussi haut que possible** et **fermez fortement le diaphragme** (de l'ordre de
-f/16) : on veut une lumière faible, douce et parfaitement **uniforme** sur toute la
-surface du papier. Une mise au point volontairement floue ou un diffuseur aident à
-gommer toute structure résiduelle. Pour un flash neutre, repartez d'une filtration
-basse ; pour un flash teinté, affichez les valeurs Y/M voulues.
+L'agrandisseur lui-même sert de source. La méthode la plus propre en couleur
+consiste à **remplacer le négatif par une chute de film C-41 vierge mais développé**
+— idéalement l'amorce du même film, qui porte le **même masque orangé** — en
+conservant **exactement la filtration du tirage**. Le flash a alors la même balance
+que la lumière de l'image : il reste **neutre** et n'introduit aucune dominante. Ce
+morceau de film ne portant aucun détail, il n'enlève rien à l'image ; on garde la
+tête et le diaphragme du tirage, et on **dose uniquement par le temps**.
+
+À défaut de film vierge, on peut **retirer purement le négatif**, monter la tête
+aussi haut que possible et **fermer fortement le diaphragme** (≈ f/16) pour obtenir
+une lumière très faible et uniforme — c'est la méthode héritée du N&B. Dans les deux
+cas, une lumière douce et bien répartie sur toute la surface est essentielle ; une
+mise au point volontairement floue ou un diffuseur gomment toute structure
+résiduelle.
 
 ![Montage du pré-flash : agrandisseur sans négatif, tête haute, diaphragme fermé, et bande d'essai de seuil avec zone témoin.](/photo-explore/images/schemas/pre-flash-banc-essai.svg)
 
@@ -137,11 +155,12 @@ verra aussi dans vos noirs.
 ### Pré-flash ou post-flash ?
 
 Comme l'exposition est **additive**, flasher le papier *avant* ou *après* avoir
-projeté l'image revient pratiquement au même résultat ; on parle de « pré »-flash
-par simple commodité de manipulation. Ce qui compte, ce n'est pas l'ordre mais la
-**dose** : tant qu'elle reste sous le seuil, l'effet est un relèvement du pied ;
-au-delà, on bascule dans le **voile** (une densité visible ajoutée partout), qui
-est le mode d'échec à éviter.
+projeté l'image donne des résultats très voisins ; on parle de « pré »-flash par
+simple commodité de manipulation. Certains tireurs expérimentés rapportent une
+**différence subtile** entre les deux, mal expliquée mais bien réelle ; l'essentiel
+n'est cependant pas l'ordre, c'est la **dose**. Tant qu'elle reste sous le seuil,
+l'effet est un relèvement du pied ; au-delà, on bascule dans le **voile** (une
+densité visible ajoutée partout), le mode d'échec à éviter.
 
 ### Intégrer au flux de travail
 
@@ -172,12 +191,22 @@ contraste plus profonde et plus contrôlable, deux autres voies existent :
   densité) que l'on met en registre avec le négatif pour comprimer sa plage de
   densités avant tirage. C'est la méthode la plus puissante mais la plus exigeante
   en matériel et en rigueur ; Ctein lui consacre une large part de *Post Exposure*.
-- **Le SLIMT / méthode Sterry** (*Selective Latent Image Manipulation Technique*).
-  On baigne le papier **exposé mais non développé** dans une solution très diluée de
-  **ferricyanure de potassium** (de l'ordre de 0,01 à 0,03 %) avant le révélateur :
-  ce blanchiment de l'image latente attaque préférentiellement les faibles densités
-  et **réduit le contraste**. David Kachel a modernisé ce vieux procédé de John
-  Sterry (1904) pour le rendre fiable sur papier comme sur film, RA-4 compris.
+- **Le blanchiment de l'image latente (méthode Sterry / SLIMT).** On baigne le
+  papier **exposé mais non développé** dans une solution très diluée de **ferricyanure
+  de potassium** *avant* le révélateur : ce blanchiment attaque préférentiellement les
+  faibles densités et **réduit le contraste**. Pour le RA-4, l'article de référence
+  (Bertram W. Miller, « Lowering Contrast in RA-4 Color Papers », 1992) décrit un bain
+  de **0,1 % de ferricyanure de potassium** additionné de **0,03 % de bromure de
+  potassium** (anti-voile), de l'ordre de **9 min à 24 °C**, à usage unique, au prix
+  d'environ **⅔ de diaphragme de sensibilité**. Deux impératifs : **rincer
+  soigneusement** le papier avant le révélateur, et **ne jamais** mélanger le
+  ferricyanure au révélateur ni passer du révélateur directement au ferricyanure (la
+  réaction provoque taches et noircissement). À ne pas confondre avec le SLIMT
+  *moderne* de David Kachel, beaucoup plus dilué (0,01–0,03 %), calibré pour le N&B.
+- **Adoucir le révélateur.** Ajouter un peu de **sulfite de sodium** (~0,5 à 1 g/L),
+  voire d'**acide citrazinique** (~0,5 g/L), au révélateur couleur fait baisser
+  contraste, saturation et Dmax. Un ancien ingénieur papier de Kodak qualifiait
+  lui-même ces additifs d'« options médiocres » : à réserver aux cas désespérés.
 
 | Méthode | Agit surtout sur | Complexité |
 | --- | --- | --- |
@@ -195,9 +224,14 @@ respecter ce seuil de teinte que la bande d'essai vous révèle.
   du pré-flashage sous l'agrandisseur.
 - *Paper Flashing — the pre-flash* et *Pre-flash examples*, Photomi7ch
   (photomi7ch.blogspot.com) — seuil, inertie et méthode de la bande d'essai.
-- Discussions techniques sur Photrio (photrio.com) : « Contrast control & color
-  printing », « Pre-flashing RA-4 », « Preflash with Colour? » — effet sur les
-  hautes lumières et flash coloré en RA-4.
+- Discussions techniques sur Photrio (photrio.com) : « Pre-flashing RA-4 » (méthode
+  au film C-41 vierge, flash neutre/coloré, crossover, pré- vs post-flash),
+  « Contrast control & color printing » (grades et gamma du papier couleur, additifs
+  au révélateur, par l'ingénieur Kodak « Photo Engineer ») et « Preflash with
+  Colour? ».
+- Bertram W. Miller, « Lowering Contrast in RA-4 Color Papers, Latent Image
+  Bleaching », *The Darkroom & Creative Camera Techniques* (Annual Special #6, 1992)
+  — méthode Sterry chiffrée pour le RA-4 (références relayées sur Photrio).
 - *Printing from slide film using RA-4 reversal processing*, EMULSIVE (emulsive.org)
   — pré-flash en tirage inversible et chute du Dmax.
 - *Latent image bleaching / the new Sterry method*, Ed Buffaloe (unblinkingeye.com)
